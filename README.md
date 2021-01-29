@@ -26,6 +26,8 @@ Open a new terminal and in the project's `react-client` directory, run:
 
 `yarn start`
 
+If this is your first time running the app, be sure to run `yarn install` in the project's `react-client` directory.
+
 # Note:
 
 It is crucial to remember to activate your virtual environment for python before installing any dependencies. If your environment is already set up, then activate it like this:
