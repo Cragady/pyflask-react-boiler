@@ -8,11 +8,17 @@ This reference is assuming that the developer is using a linux distro.
 
 # To Start
 
-You need to set up your virtual environment then install the neccessary dependencies for this app to work.
+I forgot some things while setting up, so you will have to load in the .env file for the app to run. Be sure to work some git magic when you use an actual .env file so you're not pushing a .env file to a public repository. You'll have to add .env to the .gitignore, then delete git's cache.
+
+You need to set up your virtual environment then install the neccessary dependencies in the virtual environment for this app to work.
 
 Open a terminal and in the project's root directory, run:
 
-`flask run`
+```bash
+source env/bin/activate
+. .env
+flask run
+```
 
 Open a new terminal and in the project's `react-client` directory, run:
 
