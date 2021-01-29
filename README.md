@@ -4,6 +4,46 @@ The purpose for this repository is to set up a quick reference on how to build a
 
 I realize there may be an easier way to accomplish this, but this is going to go up as-is for future reference for me. I will update this repo if I choose to do so and if I find a better way to accomplish the same thing. This repo is non-critical, so updates may be infrequent if there are updates.
 
+This reference is assuming that the developer is using a linux distro. 
+
+# To Start
+
+You need to set up your virtual environment then install the neccessary dependencies for this app to work.
+
+Open a terminal and in the project's root directory, run:
+
+`flask run`
+
+Open a new terminal and in the project's `react-client` directory, run:
+
+`yarn start`
+
+# Note:
+
+It is crucial to remember to activate your virtual environment for python before installing any dependencies. If your environment is already set up, then activate it like this:
+
+`source env/bin/activate`
+
+I typically like to keep the virtual environments in the root of the project folder and name it `env`. Be sure to add the `env/` directory to your `.gitignore` if it isn't already in there.
+
+`echo env/ >> .gitignore`
+
+If you like to have your `.gitignore` file a bit more organized, then just use your favorite text editor to add `env/` into `.gitignore` where you would like it.
+
+If you do not have a virtual environment set up, then you'll need to set up the virtual env before you can activate or install dependencies. 
+
+In your project's root directory:
+
+`python -m venv env`
+
+It is important to remember to never install python packages globally. It will break things if you are on a linux distro. Use your user's home path for installing packages if you need global access. Using the user's home path will keep the distro's python environment clean.
+
+# Installing Dependencies
+
+After you have your virtual environment set up, run this command:
+
+`python -m pip install -r requirements.txt`
+
 # Stack Used
 
 * Python v 3.8.5
