@@ -6,6 +6,8 @@ I realize there may be an easier way to accomplish this, but this is going to go
 
 This reference is assuming that the developer is using a linux distro. 
 
+At this time of writing, this is a bare-bones app.
+
 # To Start
 
 I forgot some things while setting up, so you will have to load in the .env file for the app to run. Be sure to work some git magic when you use an actual .env file so you're not pushing a .env file to a public repository. You'll have to add .env to the .gitignore, then delete git's cache.
