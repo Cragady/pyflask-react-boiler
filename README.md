@@ -85,30 +85,30 @@ This repository is a very basic setup for python web app utilizing Flask.
 ## Tips
 
 * create env (can be anywhere, this is assuming root directory of project.
-  * python -m venv env
-    * python -m venv <env name>
+  * `python -m venv env`
+    * `python -m venv <env name>`
 
 * Activate virtual environment
-  * source env/bin/activate
-    *source <path to env>/bin/activate
+  * `source env/bin/activate`
+    * `source <path to env>/bin/activate`
 
 * Anything pip related:
   * You may want to initiate all pip commands utilizing the pip that comes with the python version. E.g. `python -m pip <command>`
 
 * update pip in virtualenv
-  * pip install --upgrade pip
+  * `pip install --upgrade pip`
 
 * Install from requirements.txt
-  * pip install -r requirements.txt
-    * pip install -r <name of file>
+  * `pip install -r requirements.txt`
+    * `pip install -r <name of file>`
 
 * Update package dependencies tracker file
-  * pip freeze > requirements.txt
-    * pip freeze > <name of file>
+  * `pip freeze > requirements.txt`
+    * `pip freeze > <name of file>`
 
 * Run server
-  * python app.py
+  * `python app.py`
 
   OR
 
-  * gunicorn app:app
+  * `gunicorn app:app`
